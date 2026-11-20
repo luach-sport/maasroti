@@ -1,0 +1,39 @@
+{
+  "id": "maasroti",
+  "title": "מעשרותי – עשר תעשר, בשביל שתתעשר",
+  "description": "מחשבון מעשרות: רושמים הכנסות ונתינות, ומעשרותי מחשבת כמה נשאר לתת. מעשר או חומש, משכורת קבועה עם תזכורת, קופת מעשרות, צילום קבלות ודוח לסעיף 46. לאנדרואיד ולאייפון. פותח על ידי Itzko.",
+  "themeColor": "#173A7A",
+  "icon": "www/icon-512.png",
+  "fonts": "www/fonts",
+  "appDir": "www",
+  "versionFile": "js/version.js",
+  "versionGlobal": "MAASROTI_VERSION",
+  "shots": "scripts/site/scenes.mjs",
+  "css": [
+    "brand.css"
+  ],
+  "creditText": "מעשרותי היא אפליקציה עצמאית של Itzko: בלי פרסומות, בלי הרשמה, והנתונים שלכם נשארים אצלכם בטלפון. כל רעיון או תקלה מגיעים ישירות אליו דרך \"פנייה / הצעת ייעול\" בהגדרות של האפליקציה.",
+  "footerNote": "הנתונים בצילומי המסך הם לדוגמה. האפליקציה עוזרת לחשבון בלבד; בשאלות הלכתיות על מעשרות כדאי להתייעץ עם רב.",
+  "parts": [
+    "hero",
+    "WHATS_NEW",
+    "offline",
+    "install",
+    "tabs",
+    "ch-home",
+    "ch-income",
+    "ch-gift",
+    "ch-history",
+    "ch-fund",
+    "ch-targets",
+    "ch-fixed",
+    "ch-prefs",
+    "ch-reports",
+    "ch-share",
+    "ch-updates",
+    "ch-feedback",
+    "kit:share-band",
+    "kit:credit",
+    "kit:footer"
+  ]
+}

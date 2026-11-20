@@ -1,0 +1,32 @@
+/* מעשרותי's colours and font on top of the shared Itzko kit (the same as the app, www/css/base.css). */
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-var.ttf') format('truetype');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --primary: #173A7A;
+  --primary-text: #1E4A9A;
+  --primary-soft: #E3EAF8;
+  --on-primary: #FFFFFF;
+  --hero: #173A7A;
+  --hero-ink: #FFFFFF;
+  --hero-muted: #D6E0F5;
+  --hero-btn-ink: #173A7A;
+  --maker-accent: #8A6408;
+  --credit-accent: #E3B341;
+  --credit-mono: #173A7A;
+  --credit-mono-ink: #E3B341;
+  --credit-glow: rgba(227, 179, 65, 0.25);
+  --shadow: 0 18px 40px -18px rgba(23, 58, 122, 0.45);
+  --font: 'Rubik', 'Segoe UI', 'Arial Hebrew', Arial, sans-serif;
+}
+.key.gold { background: #FBF1D8; color: #8A6408; border-color: #E3B341; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --primary: #8DB0FF; --primary-text: #A9C3FF; --primary-soft: #1C2A4A; --on-primary: #0D1220; --hero: #1A3266; --hero-muted: #C8D4EE; --shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.7); }
+  :root:not([data-theme="light"]) .key.gold { background: #33290F; color: #F0C55A; }
+}
+:root[data-theme="dark"] { --primary: #8DB0FF; --primary-text: #A9C3FF; --primary-soft: #1C2A4A; --on-primary: #0D1220; --hero: #1A3266; --hero-muted: #C8D4EE; --shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.7); }
+:root[data-theme="dark"] .key.gold { background: #33290F; color: #F0C55A; }

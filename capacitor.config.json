@@ -1,0 +1,34 @@
+{
+  "appId": "com.luachsport.maasroti",
+  "appName": "מעשרותי",
+  "webDir": "www",
+  "backgroundColor": "#F4F6FB",
+  "android": {
+    "backgroundColor": "#F4F6FB",
+    "allowMixedContent": false
+  },
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_maasroti",
+      "iconColor": "#173A7A"
+    },
+    "StatusBar": {
+      "backgroundColor": "#F4F6FB",
+      "style": "LIGHT",
+      "overlaysWebView": false
+    },
+    "CapacitorUpdater": {
+      "autoUpdate": false,
+      "statsUrl": "",
+      "updateUrl": "",
+      "channelUrl": "",
+      "allowModifyUrl": false,
+      "appReadyTimeout": 15000,
+      "autoDeleteFailed": true,
+      "autoDeletePrevious": true,
+      "resetWhenUpdate": true,
+      "shakeMenu": false,
+      "disableJSLogging": true
+    }
+  }
+}

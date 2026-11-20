@@ -1,0 +1,115 @@
+/* מעשרותי – fonts, colours (light and dark), resets */
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-var.ttf') format('truetype');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg: #F4F6FB;
+  --surface: #FFFFFF;
+  --inset: #E8ECF4;
+  --line: #E0E5EF;
+  --line-soft: #EDF0F6;
+  --line-strong: #C5CDDC;
+  --ink: #121A2E;
+  --ink-2: #27324A;
+  --muted: #56617A;
+  --faint: #8A93A8;
+  --primary: #173A7A;
+  --primary-press: #11306A;
+  --primary-text: #1E4A9A;
+  --primary-soft: #E3EAF8;
+  --on-primary: #FFFFFF;
+  --gold: #C9971F;
+  --gold-strong: #E3B341;
+  --gold-text: #8A6408;
+  --gold-soft: #FBF1D8;
+  --hero: #173A7A;
+  --hero-2: #0F2C61;
+  --on-hero: #FFFFFF;
+  --chip-dark: #173A7A;
+  --chip-dark-ink: #FFFFFF;
+  --green-text: #1D7A45;
+  --green-soft: #E2F3E7;
+  --red-text: #B3261E;
+  --red-soft: #FDECEA;
+  --red-line: #F3C9C2;
+  --warn-text: #9A5B00;
+  --warn-soft: #FFF0D6;
+  --mark: #FBE7B5;
+  --track: #8A93A8;
+  --shadow-card: 0 1px 2px rgba(18, 26, 46, 0.05);
+  --backdrop: rgba(10, 16, 32, 0.45);
+  --nav-h: 72px;
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --bg: #0D1220;
+  --surface: #161D2E;
+  --inset: #212A3E;
+  --line: #263049;
+  --line-soft: #1F2840;
+  --line-strong: #36415C;
+  --ink: #EEF1F7;
+  --ink-2: #D3D9E6;
+  --muted: #A0AAC0;
+  --faint: #7A849C;
+  --primary: #8DB0FF;
+  --primary-press: #7A9FF2;
+  --primary-text: #A9C3FF;
+  --primary-soft: #1C2A4A;
+  --on-primary: #0D1220;
+  --gold: #E3B341;
+  --gold-strong: #F0C55A;
+  --gold-text: #F0C55A;
+  --gold-soft: #33290F;
+  --hero: #1A3266;
+  --hero-2: #142955;
+  --on-hero: #FFFFFF;
+  --chip-dark: #8DB0FF;
+  --chip-dark-ink: #0D1220;
+  --green-text: #6FD08E;
+  --green-soft: #15301F;
+  --red-text: #FF8A80;
+  --red-soft: #3A1A17;
+  --red-line: #5A2A24;
+  --warn-text: #F5C451;
+  --warn-soft: #3A2E12;
+  --mark: #4A3A12;
+  --track: #56617A;
+  --shadow-card: none;
+  --backdrop: rgba(0, 0, 0, 0.6);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; padding: 0; overflow-x: clip; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Rubik', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+}
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+a { color: var(--primary-text); text-decoration: none; }
+svg.i { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+svg.i.sm { width: 18px; height: 18px; }
+svg.i.xs { width: 14px; height: 14px; }
+svg.i.lg { width: 28px; height: 28px; }
+svg.i.fill { fill: currentColor; }
+.ltr { direction: ltr; unicode-bidi: isolate; }
+.hidden { display: none !important; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+:focus-visible { outline: 3px solid var(--primary-text); outline-offset: 2px; }
+mark { background: var(--mark); color: inherit; border-radius: 4px; padding: 0 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
